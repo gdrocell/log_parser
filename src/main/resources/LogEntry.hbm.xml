@@ -1,0 +1,23 @@
+<hibernate-mapping>
+	<class name="com.ef.common.LogEntry" table="log_entries" catalog="log_parser">
+		<id name="logEntryId" type="java.lang.Integer">
+			<column name="logEntryId" />
+			<generator class="identity" />
+		</id>
+		<property name="requestDate" type="java.sql.Timestamp">
+			<column name="requestDate" />
+		</property>
+		<property name="ip" type="java.lang.String">
+			<column name="ip" length="16" />
+		</property>
+		<property name="httpRequest" type="java.lang.String">
+			<column name="httpRequest" length="128" />
+		</property>
+		<property name="status" type="java.lang.Integer">
+			<column name="status" />
+		</property>
+		<property name="userAgent" type="java.lang.String">
+			<column name="userAgent" length="128" />
+		</property>
+	</class>
+</hibernate-mapping>

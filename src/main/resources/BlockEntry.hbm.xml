@@ -1,0 +1,10 @@
+<hibernate-mapping>
+	<class name="com.ef.common.BlockEntry" table="blocked" catalog="log_parser">
+		<id name="ip" type="java.lang.String">
+			<column name="ip" />
+		</id>
+		<property name="comment" type="java.lang.String">
+			<column name="comment" />
+		</property>
+	</class>
+</hibernate-mapping>
